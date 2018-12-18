@@ -10,6 +10,7 @@
 		<!-- Bootstrap CSS CDN -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
 		integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 		<!-- Our Custom CSS -->
 		<link rel="stylesheet" href="style.css">
 
@@ -48,7 +49,9 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="nav navbar-nav ml-auto">
 								<li class="nav-item active">
-									<a class="nav-link" href="https://github.com/LLira34" target="_blank">GitHub</a>
+									<a class="nav-link" href="https://github.com/LLira34" target="_blank">
+										<i class="fab fa-github"></i>GitHub
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -88,6 +91,9 @@
 				            <li class="nav-item">
 				                <a class="nav-link" id="front-tab" data-toggle="tab" href="#front" role="tab" aria-controls="front" aria-selected="false">Frontend</a>
 				            </li>
+				            <li class="nav-item">
+				                <a class="nav-link" id="db-tab" data-toggle="tab" href="#db" role="tab" aria-controls="db" aria-selected="false">Bases de Datos</a>
+				            </li>
 				        </ul>
 				    </div>
 
@@ -95,18 +101,24 @@
 				        <div class="tab-content" id="myTabContent">
 				            <div class="tab-pane fade show active" id="back" role="tabpanel" aria-labelledby="back-tab">
 				            	<ul class="list-group">
-								  	<li class="list-group-item active">Java</li>
+								  	<li class="list-group-item"><i class="fab fa-java"></i>Java</li>
 								  	<li class="list-group-item">Ruby</li>
 								 	<li class="list-group-item">Python</li>
 								  	<li class="list-group-item">PHP</li>
-								  	<li class="list-group-item">Javascript</li>
 								</ul>
 				            </div>
 				            <div class="tab-pane fade" id="front" role="tabpanel" aria-labelledby="front-tab">
 				            	<ul class="list-group">
 								  	<li class="list-group-item active">HTML</li>
 								  	<li class="list-group-item">CSS</li>
-								 	<li class="list-group-item">Javascript</li>
+								 	<li class="list-group-item"><i class="fab fa-js"></i> Javascript</li>
+								</ul>
+				            </div>
+				            <div class="tab-pane fade" id="db" role="tabpanel" aria-labelledby="db-tab">
+				            	<ul class="list-group">
+								  	<li class="list-group-item active">SQL Server</li>
+								  	<li class="list-group-item">MySQL</li>
+								 	<li class="list-group-item">PostgreSQL</li>
 								</ul>
 				            </div>
 				        </div>
