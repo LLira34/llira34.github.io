@@ -10,9 +10,10 @@
 		<!-- Bootstrap CSS CDN -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
 		integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" 
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 		<!-- Our Custom CSS -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="asset/css/style.css">
 
 		<!-- Font Awesome JS -->
 		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" 
@@ -25,12 +26,18 @@
 		<div class="wrapper">
 			<!-- Sidebar  -->
 			<nav id="sidebar">
-				<div class="sidebar-header">
-					<h3>Luis Lira</h3>
-				</div>
+				
 				<ul class="list-unstyled components">
-					<img src="img/face.jpg" alt="..." class="img-thumbnail">
+					<img src="asset/img/face.jpg" alt="..." class="img-thumbnail">
+					<div class="sidebar-header text-center">
+						<h3>Luis Lira</h3>
+						<i class="far fa-envelope"></i> 
+						luislira1029@gmail.com
+						<i class="fab fa-whatsapp"></i> 
+						418 113 7817
+					</div>
 				</ul>
+				
 			</nav>
 
 			<!-- Page Content  -->
@@ -50,7 +57,14 @@
 							<ul class="nav navbar-nav ml-auto">
 								<li class="nav-item active">
 									<a class="nav-link" href="https://github.com/LLira34" target="_blank">
-										<i class="fab fa-github"></i>GitHub
+										<i class="fab fa-github"></i>
+										GitHub
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="https://youtube.com/" target="_blank">
+										<i class="fab fa-youtube"></i>
+										YouTube
 									</a>
 								</li>
 							</ul>
@@ -60,7 +74,7 @@
 
 				<h2>FORMACIÓN ACADÉMICA</h2>
 				<div class="row">
-					<div class="card col" style="width: 18rem;">
+					<div class="card col">
 					  	<div class="card-body">
 					    	<h5 class="card-title">Universidad Tecnológica del Norte de Guanajuato</h5>
 					    	<h6 class="card-subtitle mb-2 text-muted">Técnico Superior Universitario en el Área Sistemas Informáticos</h6>
@@ -68,7 +82,7 @@
 							<p>2016 – 2018</p>
 					  	</div>
 					</div>
-					<div class="card col" style="width: 18rem;">
+					<div class="card col">
 					  	<div class="card-body">
 					    	<h5 class="card-title">Centro de Bachillerato Tecnológico Industrial y de Servicios. No. 75</h5>
 					    	<h6 class="card-subtitle mb-2 text-muted">Físico – Matemático en el área de Programación</h6>
@@ -77,7 +91,6 @@
 					  	</div>
 					</div>
 				</div>
-
 				<div class="line"></div>
 
 				<h2>Desarrollador Web</h2>
@@ -89,24 +102,71 @@
 				                aria-selected="true">Backend</a>
 				            </li>
 				            <li class="nav-item">
-				                <a class="nav-link" id="front-tab" data-toggle="tab" href="#front" role="tab" aria-controls="front" aria-selected="false">Frontend</a>
+				                <a class="nav-link" id="front-tab" data-toggle="tab" href="#front" role="tab" 
+								aria-controls="front" aria-selected="false">Frontend</a>
 				            </li>
 				            <li class="nav-item">
-				                <a class="nav-link" id="db-tab" data-toggle="tab" href="#db" role="tab" aria-controls="db" aria-selected="false">Bases de Datos</a>
+				                <a class="nav-link" id="db-tab" data-toggle="tab" href="#db" role="tab" 
+								aria-controls="db" aria-selected="false">Bases de datos</a>
+				            </li>
+							<li class="nav-item">
+				                <a class="nav-link" id="ide-tab" data-toggle="tab" href="#ide" role="tab" 
+								aria-controls="ide" aria-selected="false">Entorno de Desarrollo</a>
 				            </li>
 				        </ul>
 				    </div>
 
 				    <div class="card-body">
 				        <div class="tab-content" id="myTabContent">
-				            <div class="tab-pane fade show active" id="back" role="tabpanel" aria-labelledby="back-tab">
-				            	<ul class="list-group">
-								  	<li class="list-group-item"><i class="fab fa-java"></i>Java</li>
-								  	<li class="list-group-item">Ruby</li>
-								 	<li class="list-group-item">Python</li>
-								  	<li class="list-group-item">PHP</li>
-								</ul>
-				            </div>
+							<div class="tab-pane fade show active" id="back" role="tabpanel" aria-labelledby="back-tab">
+								<div class="row">
+									<ul class="list-group col">
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Java
+											<i size="5" class="fab fa-java"></i>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											PHP
+											<i class="fab fa-php"></i>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Python 
+											<i class="fab fa-python"></i>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Ruby
+											<i class="fas fa-gem"></i>
+										</li>
+									</ul>
+									<ul class="list-group col">
+										<li class="list-group-item" style="height: 50px;">
+											<div class="progress progress-bar" role="progressbar" style="width: 90%;" 
+												aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+												90%
+											</div>
+										</li>
+										<li class="list-group-item" style="height: 50px;">
+											<div class="progress progress-bar" role="progressbar" style="width: 90%;" 
+												aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+												90%
+											</div>
+										</li>
+										<li class="list-group-item" style="height: 50px;">
+											<div class="progress progress-bar" role="progressbar" style="width: 60%;" 
+												aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+												60%
+											</div>
+										</li>
+										<li class="list-group-item" style="height: 50px;">
+											<div class="progress progress-bar" role="progressbar" style="width: 60%;" 
+												aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+												60%
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
 				            <div class="tab-pane fade" id="front" role="tabpanel" aria-labelledby="front-tab">
 				            	<ul class="list-group">
 								  	<li class="list-group-item active">HTML</li>
@@ -119,10 +179,20 @@
 								  	<li class="list-group-item active">SQL Server</li>
 								  	<li class="list-group-item">MySQL</li>
 								 	<li class="list-group-item">PostgreSQL</li>
+									<li class="list-group-item">MariaDB</li>
+								</ul>
+				            </div>
+							<div class="tab-pane fade" id="ide" role="tabpanel" aria-labelledby="ide-tab">
+				            	<ul class="list-group">
+								  	<li class="list-group-item">Eclipse</li>
+								  	<li class="list-group-item">NetBeans</li>
+								 	<li class="list-group-item">Sublime Text</li>
+									<li class="list-group-item">Notepad++</li>
+									<li class="list-group-item">IDLE</li>
 								</ul>
 				            </div>
 				        </div>
-				  </div>
+					</div>
 				</div>
 				<div class="line"></div>
 			</div>
@@ -137,7 +207,6 @@
 		<!-- Bootstrap JS -->
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" 
 		integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="asset/js/app.js"></script>
 	</body>
-
 </html>
